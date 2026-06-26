@@ -1,5 +1,132 @@
 import java.util.*;
 class Patterns {
+	public static void pattern273(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= (2*n)-1; j++)
+			{
+				if(i==j || (2*n)-j == i)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern272(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(i==j)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern271(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(i == 1 || (i+j) == (n+1) || i == n)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern270(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(j == 1 || (i+j) == (n+1) || j == n)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern269(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(i == 1 || (i+j) == (n+1) || j == 1)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern268(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(i == 1 || i == j || j == n)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern267(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = i; j < n; j++)
+				System.out.print(" ");
+			for(int j = i; j >= 1; j--)
+			{
+				if(i == n || j == i || j == 1)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+
+	public static void pattern266(int n){
+		for(int i = 1; i <= n; i++)
+		{
+			for(int j = 1; j <= n; j++)
+			{
+				if(i == n || j == i || j == 1)
+					System.out.print("*");
+				else
+					System.out.print(" ");
+			}
+			System.out.println();
+		}
+	}
+	public static void pattern265(int n) {
+		for(int i = 1; i <= n; i++) {
+        		for(int k = 1; k <= n; k++) {
+            			for(int j = 1; j <= n; j++) {
+                			if((i + j) % 2 == 0) {
+                    				for (int l = 1; l <= n; l++) {
+                        				System.out.print("*");
+                    				}
+                			} else {
+                    				for (int l = 1; l <= n; l++) {
+                        				System.out.print(" ");
+                    				}
+                			}
+            			}
+            			System.out.println();
+        		}
+        		System.out.println();
+    		}
+	}
 	public static void pattern264(int n){
 		for(int i = 1; i <= n; i++)
 		{
@@ -1129,7 +1256,7 @@ class Patterns {
 			System.out.println();
 		}
 	}
-	public static void pattern225_r(int n){
+	public static void pattern225(int n){
 		for(int i = 1; i <= n; i++)	
 		{	
 			for(int j = i; j > 1; j--)
@@ -1173,7 +1300,7 @@ class Patterns {
 			System.out.println();
 		}
 	}
-	public static void pattern223(int n){
+	public static void pattern223_r(int n){
 		for(int i = n; i >= 1; i--)	
 		{	
 			for(int j = i; j < n; j++)
@@ -4703,7 +4830,7 @@ class Patterns {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter n: ");
 		int n = sc.nextInt();
-		pattern264(n);
+		pattern273(n);
 		
 	}
 }
